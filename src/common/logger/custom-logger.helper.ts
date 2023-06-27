@@ -24,4 +24,8 @@ export class CustomLogger extends ConsoleLogger implements LoggerService {
   public verbose(message: any): void {
     super.verbose(`${message}`);
   }
+
+  public table(message: any): void {
+    console.table(message);
+  }
 }
